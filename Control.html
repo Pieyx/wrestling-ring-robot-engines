@@ -1,0 +1,119 @@
+<html>
+
+
+
+<head>
+    <style>
+        .button1 {
+            margin: 1px 200px;
+        }
+    </style>
+</head>
+
+
+<head>
+    <style>
+        .button2 {
+            margin: 1px 65px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+<form action = "engines.php" method ="post">
+
+
+    <p> engine 1 </p>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="engine1">
+        <p>Value: <span id="demo"></span></p>
+    </div>
+
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        slider.oninput = function () { output.innerHTML = this.value; }
+    </script>
+
+    <p> engine 2 </p>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange2" name="engine2">
+        <p>Value: <span id="demo2"></span></p>
+    </div>
+
+    <script>
+        var slider2 = document.getElementById("myRange2");
+        var output2 = document.getElementById("demo2");
+        output2.innerHTML = slider2.value;
+        slider2.oninput = function () { output2.innerHTML = this.value; }
+    </script>
+
+    <p> engine 3 </p><button class="button button1">Save</button>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange3" name="engine3">
+        <button class="button button2">Play</button>
+        <p>Value: <span id="demo3"></span></p>
+    </div>
+
+    <script>
+        var slider3 = document.getElementById("myRange3");
+        var output3 = document.getElementById("demo3");
+        output3.innerHTML = slider3.value;
+        slider3.oninput = function () { output3.innerHTML = this.value; }
+    </script>
+
+    <p> engine 4 </p>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange4" name="engine4">
+        <p>Value: <span id="demo4"></span></p>
+    </div>
+
+    <script>
+        var slider4 = document.getElementById("myRange4");
+        var output4 = document.getElementById("demo4");
+        output4.innerHTML = slider4.value;
+        slider4.oninput = function () { output4.innerHTML = this.value; }
+    </script>
+
+    <p> engine 5 </p>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange5" name="engine5">
+        <p>Value: <span id="demo5"></span></p>
+    </div>
+
+    <script>
+        var slider5 = document.getElementById("myRange5");
+        var output5 = document.getElementById("demo5");
+        output5.innerHTML = slider5.value;
+        slider5.oninput = function () { output5.innerHTML = this.value; }
+    </script>
+
+    <p> engine 6 </p>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange6" name="engine6">
+        <p>Value: <span id="demo6"></span></p>
+    </div>
+
+    <script>
+        var slider6 = document.getElementById("myRange6");
+        var output6 = document.getElementById("demo6");
+        output6.innerHTML = slider6.value;
+        slider6.oninput = function () { output6.innerHTML = this.value; }
+    </script>
+   
+</form>
+<script>
+if(document.getElementById('button2').clicked == true)
+{
+   name='Status';
+}
+</script>
+
+</body>
+
+
+</html>
